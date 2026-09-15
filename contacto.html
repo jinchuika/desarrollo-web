@@ -1,38 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Cambie el título: es el texto de la pestaña del navegador
         y el que aparece en los resultados de búsqueda. -->
     <title>
-      Contacto con Luis Carlos Contreras
+        Contacto con Luis Carlos Contreras
     </title>
     <meta name="description" content="Esta es la página web de Luis Carlos Contreras.">
 
     <!-- La hoja de estilos se trabaja a partir de la sesión 3. -->
     <link rel="stylesheet" href="css/estilos.css">
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-      <h1>Contacto con Luis Carlos Contreras</h1>
-      <nav>
-        <a href="index.html">Inicio</a>
-        <a href="contacto.html">Contacto</a>
-        <a href="perfil.html">Perfil</a>
-      </nav>
+        <h1>Contacto con Luis Carlos Contreras</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="perfil.html">Perfil</a>
+        </nav>
     </header>
 
     <main>
-      <section>
-        <h2>Contacto</h2>
-        <p>Formulario de contacto</p>
-      </section>
+        <section>
+            <h2>Contacto</h2>
+            <p>Formulario de contacto</p>
+            <form action="#" method="POST">
+
+                <!-- Campo para el Nombre -->
+                <div>
+                    <label for="nombre">Nombre y apellido:</label><br>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre y apellido">
+                </div>
+
+                <br>
+
+                <!-- Campo para el Correo Electrónico -->
+                <div>
+                    <label for="email">Correo electrónico:</label><br>
+                    <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                </div>
+
+                <br>
+
+                <!-- Campo para el Asunto -->
+                <div>
+                    <label for="asunto">Asunto:</label><br>
+                    <input type="text" id="asunto" name="asunto" required placeholder="Motivo de tu mensaje">
+                </div>
+
+                <br>
+
+                <!-- Campo para el Mensaje -->
+                <div>
+                    <label for="mensaje">Mensaje:</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="5" cols="30" required
+                        placeholder="Escribe tu mensaje aquí..."></textarea>
+                </div>
+
+                <br>
+
+                <!-- Botón de Envío -->
+                <div>
+                    <button type="submit">Enviar mensaje</button>
+                </div>
+            </form>
+        </section>
     </main>
 
     <footer>
-      <p>2026 Luis Contreras</p>
+        <p>2026 Luis Contreras</p>
     </footer>
-  </body>
+</body>
+
 </html>
