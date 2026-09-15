@@ -1,3 +1,146 @@
-/* Hoja de estilos del proyecto.
-   Se empieza a trabajar en la sesión 3.
-   Las reglas se escriben debajo de este comentario. */
+/* --- ESTILOS GENERALES Y RESETEO BÁSICO --- */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background-color: #f4f7f9;
+   /* Un fondo gris/blanco azulado muy suave */
+   color: #1a252f;
+   /* Texto gris oscuro para mejor lectura */
+   line-height: 1.6;
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+}
+
+/* --- ENCABEZADO (HEADER) --- */
+header {
+   background-color: #004080;
+   /* Azul principal */
+   color: #ffffff;
+   /* Texto blanco */
+   padding: 20px 0;
+   text-align: center;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+   font-size: 1.8rem;
+   margin-bottom: 12px;
+}
+
+/* Menú de navegación */
+nav {
+   display: flex;
+   justify-content: center;
+   gap: 15px;
+}
+
+nav a {
+   color: #ffffff;
+   text-decoration: none;
+   font-weight: 600;
+   padding: 8px 16px;
+   border-radius: 4px;
+   transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+   background-color: #0059b3;
+   /* Azul más claro al pasar el mouse */
+}
+
+/* --- CONTENIDO PRINCIPAL (MAIN) --- */
+main {
+   flex: 1;
+   max-width: 600px;
+   width: 90%;
+   margin: 30px auto;
+   background-color: #ffffff;
+   /* Tarjeta blanca */
+   padding: 30px;
+   border-radius: 8px;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+   color: #004080;
+   margin-bottom: 8px;
+   border-bottom: 2px solid #e6f0fa;
+   padding-bottom: 6px;
+}
+
+section p {
+   color: #555555;
+   margin-bottom: 20px;
+}
+
+/* --- FORMULARIO DE CONTACTO --- */
+form div {
+   margin-bottom: 15px;
+}
+
+label {
+   font-weight: 600;
+   color: #004080;
+   display: inline-block;
+   margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+   width: 100%;
+   padding: 10px 12px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   font-size: 0.95rem;
+   font-family: inherit;
+   transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+   border-color: #0059b3;
+   outline: none;
+   box-shadow: 0 0 5px rgba(0, 89, 179, 0.3);
+}
+
+textarea {
+   resize: vertical;
+}
+
+/* Botón de envío */
+button[type="submit"] {
+   width: 100%;
+   background-color: #004080;
+   color: #ffffff;
+   border: none;
+   padding: 12px;
+   font-size: 1rem;
+   font-weight: bold;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+   background-color: #002b55;
+   /* Azul más oscuro al interactuar */
+}
+
+/* --- PIE DE PÁGINA (FOOTER) --- */
+footer {
+   background-color: #002b55;
+   /* Azul oscuro */
+   color: #ffffff;
+   text-align: center;
+   padding: 15px;
+   font-size: 0.9rem;
+   margin-top: auto;
+}
