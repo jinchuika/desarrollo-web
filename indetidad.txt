@@ -1,0 +1,7 @@
+principal  #7f456f  encabezado, botones
+acento     #43999c  hover, detalles
+fondo      #e5e5e2  fondo de la pagina
+texto      #07192b  parrafos
+
+titulos    Montserrat
+texto      Ubuntu
