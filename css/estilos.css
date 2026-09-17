@@ -50,7 +50,7 @@ nav a {
 }
 
 nav a:hover {
-   background-color: #0059b3;
+   background-color: #eb7ac0;
    /* Azul más claro al pasar el mouse */
 }
 
@@ -67,11 +67,17 @@ main {
    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-section h2 {
-   color: #004080;
-   margin-bottom: 8px;
-   border-bottom: 2px solid #e6f0fa;
-   padding-bottom: 6px;
+h2 {
+   color: #d5750d;
+   margin-left: 20px;
+   /* Margen a la izquierda para el efecto de tabulación */
+   margin-bottom: 20px;
+   /* Espacio desde la línea hacia abajo */
+   border-bottom: 2px solid #8A2BE2;
+   /* Borde de 2px de ancho en color violeta */
+   padding-bottom: 10px;
+   /* Espacio de 10px entre el texto y la línea */
+   font-size: xxx-large;
 }
 
 section p {
