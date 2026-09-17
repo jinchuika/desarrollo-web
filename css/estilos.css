@@ -144,3 +144,56 @@ footer {
    font-size: 0.9rem;
    margin-top: auto;
 }
+
+/* --- ESTILOS PARA TABLAS --- */
+table {
+   width: 100%;
+   border-collapse: collapse;
+   /* Elimina la separación doble entre bordes */
+   margin-top: 15px;
+   margin-bottom: 25px;
+   font-size: 0.95rem;
+   overflow: hidden;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+   border-radius: 6px;
+}
+
+/* Encabezados de la tabla (th) */
+th {
+   background-color: #004080;
+   /* Azul principal de tu tema */
+   color: #ffffff;
+   /* Texto en blanco */
+   font-weight: bold;
+   text-align: left;
+   padding: 12px 15px;
+}
+
+/* Celdas de datos (td) */
+td {
+   padding: 12px 15px;
+   border-bottom: 1px solid #e6f0fa;
+   color: #333333;
+}
+
+/* Efecto de filas alternadas (filas cebra) */
+tbody tr:nth-child(even) {
+   background-color: #f8fbfd;
+   /* Tono de azul muy suave para alternar */
+}
+
+/* Efecto Hover al pasar el mouse por una fila */
+tbody tr:hover {
+   background-color: #e6f0fa;
+   /* Destaca la fila seleccionada */
+   transition: background-color 0.2s ease;
+}
+
+/* Diseño responsivo para pantallas pequeñas */
+@media (max-width: 600px) {
+   table {
+      display: block;
+      overflow-x: auto;
+      /* Permite desplazamiento horizontal si no cabe en móviles */
+   }
+}
