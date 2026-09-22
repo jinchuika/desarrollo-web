@@ -14,7 +14,7 @@
 }
 
 body {
-   font-family: 'Ubuntu', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-family: "Playwrite CU Guides", cursive;
    background-color: var(--color-fondo);
    color: var(--color-texto);
    line-height: 1.6;
