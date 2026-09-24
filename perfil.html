@@ -1,80 +1,125 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Cambie el título: es el texto de la pestaña del navegador
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Cambie el título: es el texto de la pestaña del navegador
         y el que aparece en los resultados de búsqueda. -->
-    <title>
-      Perfil de Luis Carlos Contreras
-    </title>
-    <meta name="description" content="Esta es la página web de Luis Carlos Contreras.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+CU+Guides&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU+Guides&display=swap" rel="stylesheet">
+  <title>
+    Perfil de Luis Carlos Contreras
+  </title>
+  <meta name="description" content="Esta es la página web de Luis Carlos Contreras.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+CU+Guides&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU+Guides&display=swap" rel="stylesheet">
 
-    <!-- La hoja de estilos se trabaja a partir de la sesión 3. -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
-    <link rel="stylesheet" href="css/estilos.css">
-  </head>
-  <body>
-    <header>
-      <h1>Perfil de Luis Carlos Contreras</h1>
-      <nav>
-        <a href="index.html">Inicio</a>
-        <a href="contacto.html">Contacto</a>
-        <a href="perfil.html">Perfil</a>
-      </nav>
-    </header>
+  <!-- La hoja de estilos se trabaja a partir de la sesión 3. -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/scripts.js" defer></script>
+</head>
 
-    <main>
+<body>
+  <header>
+    <h1>Perfil de Luis Carlos Contreras</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="perfil.html">Perfil</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Proyectos</h2>
+      <div class="tarjetas">
+        <article>
+          <h3>Pipeline ETL</h3>
+          <p>Diseño y automatización de procesos de extracción, transformación y carga de datos masivos.</p>
+        </article>
+        <article>
+          <h3>Data Warehouse</h3>
+          <p>Modelado dimensional en estrella orientado a análisis de inteligencia de negocios.</p>
+        </article>
+        <article>
+          <h3>Dashboard en Tiempo Real</h3>
+          <p>Visualización de métricas operativas conectada a arquitecturas orientadas a eventos.</p>
+        </article>
+      </div>
+    </section>
+
+    <button id="ver-mas" type="button">Ver mas proyectos</button>
+    <div id="proyectos-extra" class="oculto">
       <section>
-        <h2>Perfil de Luis Contreras</h2>
-        <p>Ingeniero de datos.</p>
-        <table>
-            <tr>
-                <td>Columna 1</td>
-                <td>Columna 2</td>
-            </tr>
-            <tr>
-                <td>Columna 1</td>
-                <td>Columna 2</td>
-            </tr>
-            <tr>
-                <td>Columna 1</td>
-                <td>Columna 2</td>
-            </tr>
-        </table>
-      </section>
-
-      <!-- SECCIÓN DE PROYECTOS -->
-      <section class="seccion-proyectos">
-        <h2>Proyectos</h2>
+        <h2>Otros proyectos</h2>
         <div class="tarjetas">
-          <article class="tarjeta">
-            <h3>Pipeline de Datos ETL</h3>
-            <p>Construcción e integración de tuberías de datos automatizadas para el procesamiento masivo en la nube.</p>
+          <article>
+            <h3>Pipeline ETL</h3>
+            <p>Diseño y automatización de procesos de extracción, transformación y carga de datos masivos.</p>
           </article>
-
-          <article class="tarjeta">
-            <h3>Modelado de Data Warehouse</h3>
-            <p>Diseño e implementación de un modelo en estrella orientado al análisis de inteligencia de negocios.</p>
+          <article>
+            <h3>Data Warehouse</h3>
+            <p>Modelado dimensional en estrella orientado a análisis de inteligencia de negocios.</p>
           </article>
-
-          <article class="tarjeta">
+          <article>
             <h3>Dashboard en Tiempo Real</h3>
-            <p>Visualización e ingesta de métricas operativas utilizando arquitecturas orientadas a eventos.</p>
+            <p>Visualización de métricas operativas conectada a arquitecturas orientadas a eventos.</p>
           </article>
         </div>
       </section>
-    </main>
+    </div>
 
-    <footer>
-      <p>2026 Luis Contreras</p>
-    </footer>
-  </body>
+    <section>
+      <h2>Perfil de Luis Contreras</h2>
+      <p>Ingeniero de datos.</p>
+      <table>
+        <tr>
+          <td>Columna 1</td>
+          <td>Columna 2</td>
+        </tr>
+        <tr>
+          <td>Columna 1</td>
+          <td>Columna 2</td>
+        </tr>
+        <tr>
+          <td>Columna 1</td>
+          <td>Columna 2</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- SECCIÓN DE PROYECTOS -->
+    <section class="seccion-proyectos">
+      <h2>Proyectos</h2>
+      <div id="tarjetas">
+        <article class="tarjeta">
+          <h3>Pipeline de Datos ETL</h3>
+          <p>Construcción e integración de tuberías de datos automatizadas para el procesamiento masivo en la nube.</p>
+        </article>
+
+        <article class="tarjeta">
+          <h3>Modelado de Data Warehouse</h3>
+          <p>Diseño e implementación de un modelo en estrella orientado al análisis de inteligencia de negocios.</p>
+        </article>
+
+        <article class="tarjeta">
+          <h3>Dashboard en Tiempo Real</h3>
+          <p>Visualización e ingesta de métricas operativas utilizando arquitecturas orientadas a eventos.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="anio"></span> Luis Carlos Contreras</p>
+  </footer>
+</body>
+
 </html>

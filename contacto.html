@@ -12,8 +12,15 @@
     </title>
     <meta name="description" content="Esta es la página web de Luis Carlos Contreras.">
 
+    <!-- Las tipografías van ANTES de la hoja de estilos, en las tres páginas. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playwrite+CU+Guides:wght@400&display=swap">
+
     <!-- La hoja de estilos se trabaja a partir de la sesión 3. -->
     <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/scripts.js" defer></script>
 </head>
 
 <body>
@@ -30,51 +37,39 @@
         <section>
             <h2>Contacto</h2>
             <p>Formulario de contacto</p>
-            <form action="#" method="POST">
 
-                <!-- Campo para el Nombre -->
+            <!-- novalidate apaga los avisos del navegador para que se vean
+                 los mensajes propios, que son los que se escribieron aquí. -->
+            <form id="contacto" novalidate>
                 <div>
-                    <label for="nombre">Nombre y apellido:</label><br>
-                    <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre y apellido">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre">
+                    <p class="error" id="error-nombre"></p>
                 </div>
 
-                <br>
-
-                <!-- Campo para el Correo Electrónico -->
                 <div>
-                    <label for="email">Correo electrónico:</label><br>
-                    <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" name="correo">
+                    <p class="error" id="error-correo"></p>
                 </div>
 
-                <br>
-
-                <!-- Campo para el Asunto -->
                 <div>
-                    <label for="asunto">Asunto:</label><br>
-                    <input type="text" id="asunto" name="asunto" required placeholder="Motivo de tu mensaje">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+                    <p class="error" id="error-mensaje"></p>
                 </div>
 
-                <br>
-
-                <!-- Campo para el Mensaje -->
-                <div>
-                    <label for="mensaje">Mensaje:</label><br>
-                    <textarea id="mensaje" name="mensaje" rows="5" cols="30" required
-                        placeholder="Escribe tu mensaje aquí..."></textarea>
-                </div>
-
-                <br>
-
-                <!-- Botón de Envío -->
-                <div>
-                    <button type="submit">Enviar mensaje</button>
-                </div>
+                <button type="submit">Enviar</button>
             </form>
+
+            <!-- Va vacío. El texto lo escribe JavaScript cuando todo está bien.
+                 role="status" hace que un lector de pantalla lo anuncie. -->
+            <p class="exito oculto" id="mensaje-exito" role="status"></p>
         </section>
     </main>
 
     <footer>
-        <p>2026 Luis Contreras</p>
+        <p>&copy; <span id="anio"></span> Luis Carlos Contreras</p>
     </footer>
 </body>
 

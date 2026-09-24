@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Cambie el título: es el texto de la pestaña del navegador
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Cambie el título: es el texto de la pestaña del navegador
         y el que aparece en los resultados de búsqueda. -->
-    <title>
-      Página de Luis Carlos Contreras
-    </title>
-    <meta name="description" content="Esta es la página web de Luis Carlos Contreras.">
+  <title>
+    Página de Luis Carlos Contreras
+  </title>
+  <meta name="description" content="Esta es la página web de Luis Carlos Contreras.">
 
-    <!-- La hoja de estilos se trabaja a partir de la sesión 3. -->
-    <link rel="stylesheet" href="css/estilos.css">
-  </head>
-  <body>
-    <header>
-      <h1>Página de Luis Carlos Contreras</h1>
-      <nav>
-        <a href="index.html">Inicio</a>
-        <a href="contacto.html">Contacto</a>
-        <a href="perfil.html">Perfil</a>
-      </nav>
-    </header>
+  <!-- La hoja de estilos se trabaja a partir de la sesión 3. -->
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/scripts.js" defer></script>
+</head>
 
-    <main>
-      <section>
-        <h2>Servicios</h2>
-        <p>Ingeniería de datos.</p>
-      </section>
-    </main>
+<body>
+  <header>
+    <h1>Página de Luis Carlos Contreras</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="perfil.html">Perfil</a>
+    </nav>
+  </header>
 
-    <footer>
-      <p>2026 Luis Contreras</p>
-    </footer>
-  </body>
+  <main>
+    <section id="hero-experiencia">
+      <h2><span id="contador-anios">1</span> años de experiencia en sistemas</h2>
+    </section>
+    <section>
+      <h2>Servicios</h2>
+      <p>Ingeniería de datos.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="anio"></span> Luis Carlos Contreras</p>
+  </footer>
+</body>
+
 </html>
