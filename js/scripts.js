@@ -119,13 +119,17 @@ if (formulario) {
 const contenedor = document.querySelector("#tarjetas");
 
 function dibujarTarjetas(proyectos) {
-    contenedor.innerHTML = "";                    // se limpia antes de dibujar
+    contenedor.innerHTML = ""; // Limpia el contenido previo
+
     proyectos.forEach(function (proyecto) {
         const tarjeta = document.createElement("article");
         tarjeta.className = "tarjeta";
-        tarjeta.innerHTML =
-            "<h3>" + proyecto.nombre + "</h3>" +
-            "<p>" + proyecto.descripcion + "</p>";
+
+        tarjeta.innerHTML = `
+            <h3>${proyecto.nombre}</h3>
+            <p>${proyecto.descripcion}</p>
+        `;
+
         contenedor.appendChild(tarjeta);
     });
 }
@@ -133,12 +137,16 @@ function dibujarTarjetas(proyectos) {
 if (contenedor) {
     fetch("datos/proyectos.json")
         .then(function (respuesta) {
-            return respuesta.json();              // el texto pasa a ser lista
+            if (!respuesta.ok) {
+                throw new Error("Error en la respuesta de la red");
+            }
+            return respuesta.json();
         })
         .then(function (proyectos) {
             dibujarTarjetas(proyectos);
         })
         .catch(function (error) {
+            console.error("Error al cargar los proyectos:", error);
             contenedor.innerHTML = "<p>No se pudieron cargar los proyectos.</p>";
         });
 }

@@ -1,0 +1,22 @@
+[
+    {
+        "nombre": "Pipeline de Datos ETL",
+        "anio": 2024,
+        "descripcion": "Construcción e integración de tuberías de datos automatizadas para el procesamiento masivo en la nube."
+    },
+    {
+        "nombre": "Planta de tratamiento",
+        "anio": 2023,
+        "descripcion": "Hice una planta de tratamiento en el pueblo."
+    },
+    {
+        "nombre": "Levantamiento topografico",
+        "anio": 2023,
+        "descripcion": "Se realizó el levantamiento para el proyecto de Edificio X."
+    },
+    {
+        "nombre": "Creación de una base de datos",
+        "anio": 2023,
+        "descripcion": "Se creó una base de datos para la comunidad."
+    }
+]
